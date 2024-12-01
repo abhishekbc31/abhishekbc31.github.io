@@ -27,9 +27,11 @@ const ball = {
 let score = 0;
 let lives = 3;
 
-// Event listeners
-window.addEventListener('mousemove', (e) => {
-  paddle.x = e.clientX - paddle.width / 2;
+// Event listeners for touch
+canvas.addEventListener('touchmove', (e) => {
+  const touch = e.touches[0];
+  const touchX = touch.clientX;
+  paddle.x = touchX - paddle.width / 2;
 });
 
 // Game loop
