@@ -1,37 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quests - Turn Life Into a Game</title>
-    <link rel="stylesheet" href="main.css">
-    <script defer src="main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch the Ball</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    canvas {
+      display: block;
+      background: #f0f0f0;
+    }
+  </style>
 </head>
 <body>
-    <header class="hero">
-        <h1>Quests</h1>
-        <p>Turn your life into an epic adventure!</p>
-        <a href="dashboard.html" class="btn-primary">Get Started</a>
-    </header>
-
-    <section class="features">
-        <h2>Features</h2>
-        <div class="feature">
-            <h3>Track Quests</h3>
-            <p>Create and complete quests to level up!</p>
-        </div>
-        <div class="feature">
-            <h3>Earn XP</h3>
-            <p>Gain rewards for achieving your goals.</p>
-        </div>
-        <div class="feature">
-            <h3>Customize Your Avatar</h3>
-            <p>Build your character and show your progress.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Quests. All rights reserved.</p>
-    </footer>
+  <canvas id="gameCanvas"></canvas>
+  <script src="game.js"></script>
 </body>
 </html>
