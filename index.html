@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catch the Ball</title>
-  <style>
-    body {
-      margin: 0;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
-    }
-    canvas {
-      display: block;
-      background: #f0f0f0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Music</title>
 </head>
-<body>
-  <canvas id="gameCanvas"></canvas>
-  <script src="game.js"></script>
+<body style="text-align:center; background-color:#f4f4f9; font-family: Arial, sans-serif;">
+    <h1>Stream Your Music</h1>
+    <p>Click the play button to listen to the music.</p>
+
+    <!-- Audio Player -->
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <p>If the audio doesn't load, check your internet connection or try another browser.</p>
 </body>
 </html>
